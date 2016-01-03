@@ -15,31 +15,31 @@ Create the Openshift DIY Application
 
 2. Accept the EULA:
 
-   1. ssh into your gear:
+   i. ssh into your gear:
    ```bash
    $ rhc ssh spigot
    ```
-   2. Find the Eula.txt file and edit it:
+   ii. Find the Eula.txt file and edit it:
    ```bash
    $ cd app-root
    $ cd data
    ```
-   3. Use any text-editor you want, vi worked well for me:
+   iii. Use any text-editor you want, vi worked well for me:
    ```bash
    $ vi eula.txt
    ```
-   4. Now accept the eula:
+   iv. Now accept the eula:
    ```
    eula = true
    ```
-   5. Close your text-editor and exit the ssh-connection.
-   6. Stop the gear:
+   v. Close your text-editor and exit the ssh-connection.
+   vi. Stop the gear:
    ```bash
    $ rhc app-force-stop spigot
    RESULT:
    spigot force stopped
    ```
-   7. And start it:
+   vii. And start it:
    ```bash
    $ rhc app-start spigot
    RESULT:
