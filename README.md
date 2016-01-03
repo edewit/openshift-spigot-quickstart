@@ -13,7 +13,19 @@ Create the Openshift DIY Application
    $ rhc app-create spigot diy --from-code=git://github.com/restedcow/openshift-spigot-quickstart.git
    ```
 
-2. Create a port-forward from your local machine to your remote server:
+2. Accept the EULA:
+
+   1. ssh into your gear:
+   ```bash
+   $rhc ssh spigot
+   ```
+   2. Find the Eula.txt file and edit it:
+   ```bash
+   $cd app-root
+   $cd data
+   $vi eula.txt
+   
+3. Create a port-forward from your local machine to your remote server:
 
 
    ```bash
