@@ -33,6 +33,7 @@ Create the Openshift DIY Application
    eula = true
    ```
    v. Close your text-editor and exit the ssh-connection.
+   
    vi. Stop the gear:
    ```bash
    $ rhc app-force-stop spigot
