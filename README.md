@@ -17,13 +17,35 @@ Create the Openshift DIY Application
 
    1. ssh into your gear:
    ```bash
-   $rhc ssh spigot
+   $ rhc ssh spigot
    ```
    2. Find the Eula.txt file and edit it:
    ```bash
-   $cd app-root
-   $cd data
-   $vi eula.txt
+   $ cd app-root
+   $ cd data
+   ```
+   3. Use any text-editor you want, vi worked well for me:
+   ```bash
+   $ vi eula.txt
+   ```
+   4. Now accept the eula:
+   ```
+   eula = true
+   ```
+   5. Close your text-editor and exit the ssh-connection.
+   6. Stop the gear:
+   ```bash
+   $ rhc app-force-stop spigot
+   RESULT:
+   spigot force stopped
+   ```
+   7. And start it:
+   ```bash
+   $ rhc app-start spigot
+   RESULT:
+   spigot started
+   ```
+   
    
 3. Create a port-forward from your local machine to your remote server:
 
