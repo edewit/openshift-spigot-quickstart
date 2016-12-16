@@ -1,5 +1,5 @@
 #!/bin/bash
-JAR_FILE=$OPENSHIFT_DATA_DIR/BuildTools.jar
+JAR_FILE=$OPENSHIFT_DATA_DIRBuildTools.jar
 
 wget "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar" -o $JAR_FILE
 java -jar $JAR_FILE --rev latest
